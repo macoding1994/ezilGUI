@@ -14,28 +14,32 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(582, 176)
+        MainWindow.resize(443, 284)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralWidget)
         self.gridLayout.setObjectName("gridLayout")
         self.label = QtWidgets.QLabel(self.centralWidget)
+        self.label.setMaximumSize(QtCore.QSize(20, 40))
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
         self.lineEdit = QtWidgets.QLineEdit(self.centralWidget)
         self.lineEdit.setObjectName("lineEdit")
         self.gridLayout.addWidget(self.lineEdit, 0, 1, 1, 1)
+        self.pushButton = QtWidgets.QPushButton(self.centralWidget)
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout.addWidget(self.pushButton, 0, 2, 2, 1)
         self.label_2 = QtWidgets.QLabel(self.centralWidget)
+        self.label_2.setMaximumSize(QtCore.QSize(20, 40))
         self.label_2.setObjectName("label_2")
         self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
         self.lineEdit_2 = QtWidgets.QLineEdit(self.centralWidget)
         self.lineEdit_2.setText("")
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.gridLayout.addWidget(self.lineEdit_2, 1, 1, 1, 1)
-        self.label_3 = QtWidgets.QLabel(self.centralWidget)
-        self.label_3.setText("")
-        self.label_3.setObjectName("label_3")
-        self.gridLayout.addWidget(self.label_3, 2, 0, 1, 2)
+        self.textBrowser = QtWidgets.QTextBrowser(self.centralWidget)
+        self.textBrowser.setObjectName("textBrowser")
+        self.gridLayout.addWidget(self.textBrowser, 2, 0, 1, 3)
         MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
@@ -45,7 +49,8 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "ezil"))
         self.label.setText(_translate("MainWindow", "ETH:"))
-        self.label_2.setText(_translate("MainWindow", "ETH:"))
+        self.pushButton.setText(_translate("MainWindow", "开始"))
+        self.label_2.setText(_translate("MainWindow", "ZIL:"))
 
 
 if __name__ == "__main__":

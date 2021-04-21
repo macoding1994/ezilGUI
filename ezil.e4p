@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-6.0.dtd">
 <!-- eric project file for project ezil -->
-<!-- Saved: 2021-04-20, 16:44:33 -->
+<!-- Saved: 2021-04-20, 18:08:17 -->
 <!-- Copyright (C) 2021 ,  -->
 <Project version="6.0">
   <Language>en_US</Language>
@@ -13,8 +13,13 @@
   <Email></Email>
   <Eol index="0"/>
   <Sources>
+    <Source>Ui_main.py</Source>
     <Source>__init__.py</Source>
+    <Source>main.py</Source>
   </Sources>
+  <Forms>
+    <Form>main.ui</Form>
+  </Forms>
   <Vcs>
     <VcsType>None</VcsType>
   </Vcs>
